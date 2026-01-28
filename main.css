@@ -1,107 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Gravitas+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
-.body {
-    background: darkgrey;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.container {
+.body{
+    background: #F2CEDA;
+}
+.navbar {
     display: flex;
-    /*justify-content: space-evenly;*/
-    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 20px 80px;
+    background: #F2CEDA;
 }
 
-.div__child {
-    background: white;
-    width: 300px;
-    height: 570px;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    font-size: 25px;
-}
-
-.price {
-    font-size: 72px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.line {
-    position: relative;
-    padding: 10px 0;
-    font-family: "Oswald", sans-serif;
-}
-
-.line::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: #ccc;
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
 }
 
 .btn {
-    background: slateblue;
-    font-family: "Oswald", sans-serif;
-    font-size: 25px;
+    background: #f53864;
     color: white;
-    height: 40px;
-    border-radius: 10px;
-    margin-top: 20px;
-    line-height: 40px;
-}
-.btn:hover {
-    background: darkgrey;
-    color: slateblue;
-    box-shadow: darkgrey 2px 2px 2px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
     cursor: pointer;
-    transform: translateY(-10px);
-    transition: 0.4s;
+    margin-top: 50px;
 }
-.div__text{
-    text-align: center;
-    margin: 0 auto;
-    font-family: "Oswald", sans-serif;
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    background: #fdebed;
 }
-.div__child__2{
-    background: #696EDD;
-    width: 300px;
-    height: 600px;
-    border-radius: 10px;
+
+.hero-text {
+    width: 50%;
+    font-family: "Fredoka", sans-serif;
+}
+
+.hero-text h1 {
+    font-size: 58px;
+    margin: 15px 0;
+    font-family: "Fredoka", sans-serif;
+}
+.hero-text__paragraph{
+    font-size: 18px;
+    font-family: "Fredoka", sans-serif;
+    margin-top: 35px;
+}
+
+.hero-text span {
+    color: #f53864;
+    font-family: "Fredoka", sans-serif;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 80px;
+    align-items: center;
+    background: white;
+}
+
+.card {
+    background: white;
     padding: 20px;
-    text-align: center;
-    font-size: 25px;
-}
-.btn__1{
-    background: #cccccc;
-    font-family: "Oswald", sans-serif;
-    font-size: 25px;
-    height: 40px;
     border-radius: 10px;
-    margin-top: 20px;
-    line-height: 40px;
-    color: slateblue;
+    box-shadow: 5px 5px 15px gray;
 }
-.btn__1:hover {
-    background: blueviolet;
-    color: white;
-    box-shadow: darkgrey 2px 2px 2px;
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px;
+    background: #fdebed;
+    height: 545px;
+}
+.product-text {
+    width: 50%;
+}
+.card__child{
+    text-align: center;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+.nav__menu:hover{
     cursor: pointer;
-    transform: translateY(-10px);
-    transition: 0.4s;
+    color :#D23166;
 
 }
-@media only screen and (max-width: 450px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        gap: 32px;
-    }
+.card__child__text{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 25px;
 }
+.child__text__1{
+    margin-top: 10px;
 
-
+}
+.h2{
+    font-size: 45px;
+}
+.product__paragraph{
+    font-size: 16px;
+    margin-top: 20px;
+}
