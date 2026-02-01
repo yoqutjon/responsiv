@@ -292,16 +292,6 @@ body{
     height: 442px;
 }
 
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .testimonial-images {
-        margin-top: 40px;
-    }
-}
 .hero {
     display: flex;
     align-items: center;
@@ -439,6 +429,18 @@ body{
 .footer-container{
     height: 381px;
 }
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+}
+
+
 
 
 
