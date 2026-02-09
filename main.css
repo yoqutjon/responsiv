@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 * {
     margin: 0;
@@ -51,7 +52,6 @@ body{
 
 .hero-text h1 {
     font-size: 58px;
-    margin: 15px 0;
     font-family: "Fredoka", sans-serif;
 }
 .hero-text__paragraph{
@@ -265,6 +265,7 @@ body{
     margin-bottom: 30px;
 }
 
+
 .avatars {
     display: flex;
     align-items: center;
@@ -429,17 +430,141 @@ body{
 .footer-container{
     height: 381px;
 }
-@media only screen and (max-width: 600px) {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: 0 auto;
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav__menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar nav a {
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+        height: auto;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+    .product-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text__paragraph {
+        font-size: 15px;
+    }
+
+    .hero-img img {
+        width: 90%;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+    .product-img{
+        max-width: 1000px;
+    }
+
+
+    .product__1 {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .product-card{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .product-card.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .product-card img {
+        max-width: 280px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-images {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonial-images img {
+        width: 90%;
+    }
+
+    .hero-image img {
+        width: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .help-box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         align-items: center;
-        justify-content: center;
-        gap: 32px;
+    }
+
+    .help-box input {
+        width: 90%;
+    }
+
+    .help-box button {
+        width: 90%;
+        height: 60px;
+    }
+    .footer-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+
+    .newsletter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter input{
+        width: 100%;
+    }
+    .newsletter button {
+        width: 100%;
+    }
+    .quist-container{
+        flex-direction: column;
+        text-align: center;
+
     }
 }
-
 
 
 
